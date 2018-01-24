@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp1/comp2.component';
 import { BindingComponent } from './binding/binding.component';
+import { ColorComponent } from './color/color.component';
+import { TwowayComponent } from './twoway/twoway.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Comp1Component,
     Comp2Component,
-    BindingComponent
+    BindingComponent,
+    ColorComponent,
+    TwowayComponent
   ],
   imports: [
     BrowserModule,
