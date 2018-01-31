@@ -14,6 +14,7 @@ import { CompFilsComponent } from './comp-fils/comp-fils.component';
 import { CvComponent } from './cv/cv.component';
 import { ListComponent } from './list/list.component';
 import { ItemComponent } from './item/item.component';
+import { WordComponent } from './word/word.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ItemComponent } from './item/item.component';
     CompFilsComponent,
     CvComponent,
     ListComponent,
-    ItemComponent
+    ItemComponent,
+    WordComponent
   ],
   imports: [
     BrowserModule,
