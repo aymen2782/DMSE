@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -9,6 +9,11 @@ import { Comp2Component } from './comp1/comp2.component';
 import { BindingComponent } from './binding/binding.component';
 import { ColorComponent } from './color/color.component';
 import { TwowayComponent } from './twoway/twoway.component';
+import { CvCardComponent } from './cv-card/cv-card.component';
+import { CompFilsComponent } from './comp-fils/comp-fils.component';
+import { CvComponent } from './cv/cv.component';
+import { ListComponent } from './list/list.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { TwowayComponent } from './twoway/twoway.component';
     Comp2Component,
     BindingComponent,
     ColorComponent,
-    TwowayComponent
+    TwowayComponent,
+    CvCardComponent,
+    CompFilsComponent,
+    CvComponent,
+    ListComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +35,7 @@ import { TwowayComponent } from './twoway/twoway.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
