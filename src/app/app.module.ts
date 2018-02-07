@@ -15,6 +15,9 @@ import { CvComponent } from './cv/cv.component';
 import { ListComponent } from './list/list.component';
 import { ItemComponent } from './item/item.component';
 import { WordComponent } from './word/word.component';
+import { LampeComponent } from './lampe/lampe.component';
+import { HighlightDirective } from './highlight.directive';
+import { TestDirectiveComponent } from './test-directive/test-directive.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { WordComponent } from './word/word.component';
     CvComponent,
     ListComponent,
     ItemComponent,
-    WordComponent
+    WordComponent,
+    LampeComponent,
+    HighlightDirective,
+    TestDirectiveComponent
   ],
   imports: [
     BrowserModule,
