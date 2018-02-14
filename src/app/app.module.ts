@@ -16,6 +16,8 @@ import { WordComponent } from './word/word.component';
 import { LampeComponent } from './lampe/lampe.component';
 import { HighlightDirective } from './highlight.directive';
 import { TestDirectiveComponent } from './test-directive/test-directive.component';
+import { TodoComponent } from './todo/todo.component';
+import {TodoService} from "./todo.service";
 
 @NgModule({
   declarations: [
@@ -31,14 +33,15 @@ import { TestDirectiveComponent } from './test-directive/test-directive.componen
     WordComponent,
     LampeComponent,
     HighlightDirective,
-    TestDirectiveComponent
+    TestDirectiveComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
