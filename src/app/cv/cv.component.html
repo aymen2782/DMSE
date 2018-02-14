@@ -3,6 +3,6 @@
   <app-list (sendPersonne)="getPersonne($event)" [personnes]="personnes"></app-list>
 </div>
   <div class="col-lg-7">
-    <app-cv-card [selectedPersonne]="personne"></app-cv-card>
+    <app-cv-card *ngIf="personne" [selectedPersonne]="personne"></app-cv-card>
   </div>
 </div>

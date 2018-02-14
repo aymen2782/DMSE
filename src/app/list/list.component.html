@@ -1,6 +1,5 @@
 <ul class="list-group">
-  <app-item (selectItem)="selectPersonne($event)"  [personne]="personnes[0]"></app-item>
-  <app-item (selectItem)="selectPersonne($event)" [personne]="personnes[1]"></app-item>
+  <app-item *ngFor="let myPersonne of personnes" (selectItem)="selectPersonne($event)"  [personne]="myPersonne"></app-item>
 </ul>
 
-<button class="btn btn-danger" (click)="test()"></button>
+
