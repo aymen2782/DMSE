@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import {TodoService} from "../todo.service";
 
 @Component({
   selector: 'app-lampe',
   templateUrl: './lampe.component.html',
-  styleUrls: ['./lampe.component.css']
+  styleUrls: ['./lampe.component.css'],
+  providers: []
 })
 export class LampeComponent implements OnInit {
 
   myClass : object;
   allumee : boolean;
   eteinte : boolean;
-  constructor() {
+  constructor(private todoService : TodoService) {
     this.allumee = true;
     this.eteinte = false;
     this.myClass = {
@@ -23,9 +25,6 @@ export class LampeComponent implements OnInit {
   }
 
   bouton(){
-    this.eteinte = !this.eteinte;
-    this.allumee = !this.allumee;
-    console.log(this.eteinte);
-    console.log(this.allumee);
+      this.todoService.logoTodos();
   }
 }

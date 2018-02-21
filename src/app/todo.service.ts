@@ -29,4 +29,8 @@ export class TodoService {
       this.mesTodos.splice(index, 1);
     }
   }
+
+  logoTodos(){
+    console.log(this.mesTodos);
+  }
 }
